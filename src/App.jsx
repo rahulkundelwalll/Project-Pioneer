@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Department from './Pages/Department'
 import  Pagination  from './Pages/Pagination'
+import Login from './Pages/Login'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
      <Navbar/>
      {/* <Department/> */}
      {/* <Hero/> */}
-      <Pagination/>
+      {/* <Pagination/> */}
+      <Login/>
      <Footer/>
     </div>
   )

@@ -57,7 +57,7 @@ export default function Login() {
           />
         </div>
         <div className="links">
-          <a href="#">Forgot Password?</a>
+          {/* <a href="#">Forgot Password?</a> */}
           <a href="#">Register</a>
         </div>
         <button type="submit">Login</button>

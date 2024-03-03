@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import CSS for styling
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -20,12 +22,15 @@ export default function Login() {
   };
 
   const handleSubmit = (e) => {
+    toast.success("Login succesfully");
     e.preventDefault();
     // Handle form submission here
+    // toast.success("Login succesfully");
   };
 
   return (
     <div className="login-container">
+      <ToastContainer />
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
         <div className="form-group">
@@ -48,7 +53,7 @@ export default function Login() {
         </div>
         <div className="check">
           <label htmlFor="professorCheckbox">
-            Professor? 
+            Professor?
           </label>
           <input
             id="professorCheckbox"

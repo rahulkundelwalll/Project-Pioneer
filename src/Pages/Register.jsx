@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import CSS for styling
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Register() {
   const [email, setEmail] = useState('');
@@ -22,10 +24,13 @@ export default function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
+    toast.success("Register succesfully");
+
   };
 
   return (
     <div className="login-container">
+      <ToastContainer />
       <form onSubmit={handleSubmit}>
         <h2>Register</h2>
         <div className="form-group">

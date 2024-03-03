@@ -58,7 +58,7 @@ const Hero = () => {
             >
               where curiosity is your compass, and every challenge is a hidden treasure waiting to be discovered.
             </Typography>
-            <Link to="/login" style={{ textDecoration: "none" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
             <CustomButton
               backgroundColor="#0F1B4C"
               color="#fff"

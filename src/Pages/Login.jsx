@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import CSS for styling
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -58,7 +59,7 @@ export default function Login() {
         </div>
         <div className="links">
           {/* <a href="#">Forgot Password?</a> */}
-          <a href="#">Register</a>
+          <Link to="/register">Register</Link>
         </div>
         <button type="submit">Login</button>
       </form>
